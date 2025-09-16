@@ -13,7 +13,7 @@ const Register: React.FC<RegisterProps> = ({ onSwitchToLogin }) => {
     confirmPassword: '',
     name: '',
     email: '',
-    role: 'student' as 'admin' | 'hr' | 'lecturer' | 'student'
+    role: 'admin' as 'admin' | 'hr' | 'lecturer' ,
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -137,7 +137,7 @@ const Register: React.FC<RegisterProps> = ({ onSwitchToLogin }) => {
                 onChange={handleChange}
                 className="block w-full border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option value="student">Student</option>
+              
                 <option value="lecturer">Lecturer</option>
                 <option value="hr">HR</option>
                 <option value="admin">Admin</option>
